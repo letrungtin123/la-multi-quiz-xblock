@@ -1,0 +1,2 @@
+[xblock.v1]
+la_multi_quiz = la_multi_quiz.la_multi_quiz:MultiQuizXBlock

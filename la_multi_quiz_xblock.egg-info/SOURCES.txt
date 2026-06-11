@@ -1,0 +1,11 @@
+setup.py
+la_multi_quiz/__init__.py
+la_multi_quiz/la_multi_quiz.py
+la_multi_quiz/static/html/studio_view.html
+la_multi_quiz/static/js/studio_view.js
+la_multi_quiz_xblock.egg-info/PKG-INFO
+la_multi_quiz_xblock.egg-info/SOURCES.txt
+la_multi_quiz_xblock.egg-info/dependency_links.txt
+la_multi_quiz_xblock.egg-info/entry_points.txt
+la_multi_quiz_xblock.egg-info/requires.txt
+la_multi_quiz_xblock.egg-info/top_level.txt

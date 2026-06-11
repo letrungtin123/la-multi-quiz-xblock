@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: la-multi-quiz-xblock
+Version: 0.1.0
+Summary: L&A Multiple Choice Quiz XBlock — Trắc nghiệm nhiều đáp án với ảnh carousel và video YouTube.
+Requires-Dist: XBlock

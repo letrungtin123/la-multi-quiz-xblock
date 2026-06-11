@@ -1,0 +1,50 @@
+<div class="multi-quiz-studio-editor">
+    <style>
+        .multi-quiz-studio-editor {{ font-family: 'Open Sans', Arial, sans-serif; max-width: 700px; margin: 0 auto; }}
+        .multi-quiz-studio-editor h3 {{ margin-top: 0; color: #333; }}
+        .multi-quiz-studio-editor .field {{ margin-bottom: 16px; }}
+        .multi-quiz-studio-editor label {{ display: block; font-weight: 600; margin-bottom: 4px; color: #555; font-size: 14px; }}
+        .multi-quiz-studio-editor input[type="text"],
+        .multi-quiz-studio-editor textarea {{ width: 100%; padding: 8px 10px; border: 1px solid #ccc; border-radius: 4px; font-size: 14px; box-sizing: border-box; }}
+        .multi-quiz-studio-editor textarea {{ min-height: 80px; resize: vertical; }}
+        .multi-quiz-studio-editor .hint {{ font-size: 12px; color: #888; margin-top: 4px; }}
+        .multi-quiz-studio-editor .actions {{ margin-top: 20px; text-align: right; }}
+        .multi-quiz-studio-editor .save-button {{ background: #0075b4; color: #fff; border: none; padding: 10px 28px; border-radius: 4px; cursor: pointer; font-size: 15px; font-weight: 600; }}
+        .multi-quiz-studio-editor .save-button:hover {{ background: #005a8c; }}
+        .multi-quiz-studio-editor .cancel-button {{ background: #ddd; color: #333; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer; font-size: 14px; margin-right: 10px; }}
+    </style>
+
+    <h3>📝 Cấu hình Quiz Nhiều Đáp Án + Media</h3>
+
+    <div class="field">
+        <label for="mq-display-name">Tên hiển thị:</label>
+        <input type="text" id="mq-display-name" value="{display_name}" />
+    </div>
+
+    <div class="field">
+        <label for="mq-question">Câu hỏi (HTML):</label>
+        <textarea id="mq-question">{question_html}</textarea>
+    </div>
+
+    <div class="field">
+        <label for="mq-video-url">YouTube URL (tùy chọn):</label>
+        <input type="text" id="mq-video-url" value="{video_url}" placeholder="https://youtube.com/watch?v=..." />
+    </div>
+
+    <div class="field">
+        <label for="mq-explanation">Giải thích đáp án (tùy chọn):</label>
+        <textarea id="mq-explanation">{explanation_html}</textarea>
+    </div>
+
+    <p class="hint">
+        ⚠️ Editor đầy đủ với ảnh/đáp án/gợi ý được quản lý qua Frontend Shell (CMS React).<br>
+        Form này chỉ là fallback cho Studio CMS gốc.
+    </p>
+
+    <div id="mq-data-bridge" data-raw="{data_json}" style="display:none;"></div>
+
+    <div class="actions">
+        <button class="cancel-button" id="mq-cancel-btn">Hủy</button>
+        <button class="save-button" id="mq-save-btn">💾 Lưu thay đổi</button>
+    </div>
+</div>
